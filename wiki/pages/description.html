@@ -5,53 +5,35 @@
 
 {% block page_content %}
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Bronze Medal Criterion #3</h4>
-      <p>Describe how and why you chose your iGEM project.<p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2023 Medals Page</a> for more information.</p>
+<section id="main">
+    <div class="container">
+        <p>Excessive growth trends in the global population have called for a larger demand for limited resources such as food, water, and energy. All respective sectors have proposed sustainable solutions for conserving or regenerating each limited resource; however, as the global population continues to rise, being unable to meet the demand for food while preserving the environment for future generations is among the most important environmental issues our generation will face.</p>
+
+        <p>Unfortunately, crop growth is greatly limited by the amount of nutrients supplemented, especially in the form of nitrogen. Usually, inert nitrogen gas from the atmosphere is fixed, either synthetically or naturally, into metabolically useful ammonia or nitrates. Natural nitrogen-fixing processes are from either diazotrophs (bacteria that live either on or alongside roots to fix nitrogen from the atmosphere) or lightning. However, neither are enough to sustain the demand for crop growth.</p>
+
+        <p>Since naturally occurring diazotrophs or processes are unable to keep up with the demands of modern agriculture, many farmers now rely on synthetic fertilizers created using the Haber-Bosch process, adding some form of fixed nitrogen directly to the soil. This modern method, while responsible for sustaining the exponential growth of the global population, has only created a plethora of other detrimental impacts on the environment. Chemical fertilizers are usually only used in overwhelming amounts only at the beginning of crop cycles and then are subsequently drained into groundwater reserves, or even worse, runoff into nearby water sources and cause algal blooms, interfering with local aquatic life. This causes a host of environmental issues, including acid rain, harmful algal blooms, eutrophication, and the death of wildlife.</p>
+
+        <p>To both decrease the reliance on chemically synthesized fertilizers, as well as supplement nitrogen-fixing sources, past research has suggested engineering microorganisms to be able to conduct the nitrogen-fixing process. There are some challenges associated with this solution, however. Firstly, constitutive expression of nitrogenase is highly taxing on bacteria, due to the large energy toll associated with fixing inert nitrogen to ammonia. In the past, the nitrogenase gene has been inserted into non-diazotrophic bacteria with the hope of creating artificial diazotrophs. However, constitutive expression of nitrogenase is highly taxing on bacteria, due to the large energy toll associated with fixing inert nitrogen to ammonia. As a result, many artificial diazotroph colonies experience rapid population decline. Secondly, these organisms are not externally controllable to administer levels of nitrogen like synthetic fertilizers and are often designed to be released amongst crops to release fixed nitrogen depending on environmental conditions.</p>
+
+        <p>To address these aforementioned issues, the Stony Brook 2023 iGEM team aims to utilize the genetic clock as designed by Stricker et al. in their well-known 2008 paper based on Dr. Stricker’s previous designs. Stricker and his colleagues were able to design a tunable system of positive and negative feedback that allowed E. coli cells to express a green fluorescent protein (GFP) to be expressed in a robust, oscillating cycle. The oscillations are a key component of our design. Our team plans to incorporate the nitrogenase gene cluster in this genetic clock design in place of the GFP readout protein in the activator plasmid. We plan to test the effectiveness of this system as a regular, oscillatory nitrogen fixator in E. coli, as well as P. protegens, a microbe commonly found in the plant rhizosphere.</p>
+
+        <p>This design has impacts that are two-fold. Since our project aims to both replace endogenous control of nitrogenase expression with oscillating, total external control, this system will lower the metabolic requirement necessary to express nitrogenase, while offering control of producing nitrogen sources up to crop-producers, rendering the organism to have powerful applications as a biofertilizer. Our solution will present an alternative to harmful synthetic nitrogen fertilizers, reducing the reliance on these fertilizers while still tackling demands in food production.</p>
+
     </div>
-  </div>
-</div>
+</section>
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>A clear and concise description of your project.</li>
-      <li>A detailed explanation of why your team chose to work on this particular project.</li>
-      <li>References and sources to document your research.</li>
-      <li>Use illustrations and other visual resources to explain your project.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2022.igem.wiki/dtu-denmark/description">2022 DTU-Denmark</a></li>
-      <li><a href="https://2019.igem.org/Team:ITESO_Guadalajara/Description">2019 ITESO Guadalajara</a></li>
-      <li><a href="https://2020.igem.org/Team:Technion-Israel/Description">2020 Technion Israel</a></li>
-      <li><a href="https://2020.igem.org/Team:Botchan_Lab_Tokyo/Description">2020 Botchan Lab Tokyo</a></li>
-      <li><a href="https://2020.igem.org/Team:St_Andrews/Description">2020 St Andrews</a></li>
-      <li><a href="https://2020.igem.org/Team:MIT/Description">2020 MIT</a></li>
-    </ul>
-  </div>
-</div>
+<style>
+    #main {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Some advice</h2>
-    <hr>
-    <p>We encourage you to put up a lot of information and content on your wiki, but we also encourage you to include summaries as much as possible. If you think of the sections in your project description as the sections in a publication, you should try to be concise, accurate, and unambiguous in your achievements. Your Project Description should include more information than your project abstract.</p>
-  </div>
-  <div class="col-lg-4">
-    <h2>References</h2>
-    <hr>
-    <p>iGEM teams are encouraged to record references you use during the course of your research. They should be posted somewhere on your wiki so that judges and other visitors can see how you thought about your project and what works inspired you.</p>
-  </div>
-</div>
+    #main .container {
+        text-align: left;
+        line-height: 1.5;
+        font-size: 25px;
+    }
+</style>
+
 
 {% endblock %}
