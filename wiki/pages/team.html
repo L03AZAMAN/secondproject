@@ -1,34 +1,181 @@
 {% extends "layout.html" %}
 
-{% block title %}Team{% endblock %}
-{% block lead %}On this page you can introduce your team members, instructors, and advisors.{% endblock %}
 
-{% block page_content %}
+<!DOCTYPE html>
+<html>
 
-<div class="row">
-  <div class="col-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>Include pictures of your teammates, don't forget instructors and advisors!</li>
-      <li>You can add a small biography or a few words from each team member, to tell us what you like, and what motivated you to participate in iGEM.</li>
-      <li>Take team pictures! Show us your school, your lab and little bit of your city.</li>
-      <li>Remember that image galleries can help you showcase many pictures while saving space.</li>
-    </ul>
-    <div class="bd-callout bd-callout-info"><strong>Important:</strong> Your wiki pages will be archived at the end of the iGEM season and this content will remain online. Please keep this in mind as you post photos and personal information on this page.</div>
+<head>
+
+</head>
+
+<body>
+  <section class="title-section">
+    <div class="background-image"></div>
+    <div class="title-content">
+      <h1>Meet the Team</h1>
+    </div>
+  </section>
+  
+  <div class="team-section">
+
+    <div class="team-member">
+      <div class="pic">
+        <img src="Bushra_Official.jpeg" alt="Member 1">
+        <img src="Bushra_Silly.jpeg" alt="Member 1 Hover" class="hover-image">
+      </div>
+      <div class="text">Bushra Islam</div>
+    </div>
+
+    <div class="team-member">
+      <div class="pic">
+        <img src="Aarush_Official.jpg" alt="Member 2" >
+        <img src="Aarush_Silly.jpg" alt="Member 2 Hover" class="hover-image">
+      </div>
+      <div class="text">Aarush Mehta</div>
+    </div>
+
+    <div class="team-member">
+      <div class="pic">
+        <img src="TrinityOfficial.jpeg" alt="Member 3">
+        <img src="TrinitySilly.jpeg" alt="Member 3 Hover" class="hover-image">
+      </div>
+      <div class="text">Trinity Hausch</div>
+    </div>
+    
+
+    <div class="team-member">
+      <div class="pic">
+        <img src="Grace_official.jpeg" alt="Member 3">
+        <img src="Grace_silly.jpeg" alt="Member 3 Hover" class="hover-image">
+      </div>
+      <div class="text">Grace Ding</div>
+    </div>
+
+    <div class="team-member">
+      <div class="pic">
+        <img src="Jayden-official.jpeg" alt="Member 3">
+        <img src="Jayden-silly.jpeg" alt="Member 3 Hover" class="hover-image">
+      </div>
+      <div class="text">Jayden Riley</div>
+    </div>
+
+    <div class="team-member">
+      <div class="pic">
+        <img src="Michelle-official.jpeg" alt="Member 3">
+        <img src="Michelle-silly.jpeg" alt="Member 3 Hover" class="hover-image">
+      </div>
+      <div class="text">Michelle Yang</div>
+    </div>
+
   </div>
-  <div class="col-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:CU/Team">2019 CU</a></li>
-      <li><a href="https://2019.igem.org/Team:UANL/Team">2019 UANL</a></li>
-      <li><a href="https://2019.igem.org/Team:William_and_Mary/Team">2019 William and Mary</a></li>
-      <li><a href="https://2020.igem.org/Team:BOKU-Vienna/Team">2020 BOKU Vienna </a></li>
-      <li><a href="https://2020.igem.org/Team:CAU_China/Team_Member">2020 CAU China</a></li>
-      <li><a href="https://2020.igem.org/Team:Lethbridge/Members">2020 Lethbridge</a></li>
-    </ul>
-  </div>
-</div>
+
+
+  <style>
+    /*title image styling*/
+.title-section {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('team\ ed.jpeg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8; /* Adjust the opacity as needed */
+    z-index: -1;
+  }
+  
+  .title-content {
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    
+    align-items: center;
+    justify-content: center;
+
+
+    color: white;
+    font-size: 50px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+
+/*team member styling*/
+
+.team-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  
+  .team-member {
+    width: calc(33.33% - 50px); /* Adjust the width as per your requirements */
+    margin-bottom: 20px;
+    height: 600px;
+
+    position: relative;
+    overflow: hidden;
+
+  }
+  
+  .pic img {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  
+  .pic img.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .pic:hover img {
+    opacity: 0;
+  }
+  
+  .pic:hover img.hover-image {
+    opacity: 1;
+  }
+
+
+ 
+.text {
+    position: absolute;
+    left: 100px;
+    right: 100px;
+    top: 500px;
+    bottom: 0;
+    text-align: center;
+
+    color: black;
+    font-size: 25px;
+  }
+
+  
+ 
+  </style>
+
+</body>
+
+</html>
+
+
 
 {% endblock %}
