@@ -6,6 +6,7 @@
 {% block page_content %}
 
 
+
 <!DOCTYPE html>
 <html>
 
@@ -72,10 +73,32 @@
       <div class="text">Michelle Yang</div>
     </div>
 
+    <footer>
+      <div class="footer-content">
+        <p>
+          &copy; 
+          2023 - Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+          <br>
+          The repository used to create this website is available at <a href="https://gitlab.igem.org/2023/stony-brook">https://gitlab.igem.org/2023/stony-brook</a>.
+        </p>
+        
+      </div>
+    </footer>
+    
+
   </div>
 
 
   <style>
+    /*footer styling*/
+    .footer-content {
+      margin-left: 300px;
+
+      
+    }
+    
+    
+    
     /*title image styling*/
 .title-section {
     position: relative;
@@ -141,6 +164,9 @@
     left: 0;
     object-fit: cover;
     opacity: 1;
+
+   
+
     transition: opacity 0.5s ease;
   }
   
@@ -153,10 +179,12 @@
   
   .pic:hover img {
     opacity: 0;
+    
   }
   
   .pic:hover img.hover-image {
     opacity: 1;
+    
   }
 
 
@@ -180,6 +208,9 @@
 </body>
 
 </html>
+
+
+
 
 
 
