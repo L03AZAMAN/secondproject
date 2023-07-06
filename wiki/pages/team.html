@@ -1,9 +1,7 @@
-{% extends "layout.html" %}
-  
-{% block title %}Nitroscillator{% endblock %}
-{% block lead %}Meet the team.{% endblock %}
 
-{% block page_content %}
+
+
+
 
 
 
@@ -15,6 +13,69 @@
 </head>
 
 <body>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <nav class="navbar">
+
+    
+
+    <ul class="navbar-nav">
+
+        <a class="navbar-logo" href="#">
+            <img src="igem-logo.png" alt="Logo">
+        </a>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://2023.igem.wiki/stony-brook/index.html">Homepage</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">Team</a>
+        <ul class="dropdown-menu">
+          <li><a href="https://2023.igem.wiki/stony-brook/team">Team</a></li>
+          <li><a href="https://2023.igem.wiki/stony-brook/attributions">Attributions</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">Project</a>
+        <ul class="dropdown-menu">
+          <li><a href="https://2023.igem.wiki/stony-brook/contribution">Contribution</a></li>
+          <li><a href="https://2023.igem.wiki/stony-brook/description">Description</a></li>
+          <li><a href="https://2023.igem.wiki/stony-brook/engineering">Engineering</a></li>
+          <li><a href="https://2023.igem.wiki/stony-brook/experiments">Experiment</a></li>
+          <li><a href="https://2023.igem.wiki/stony-brook/notebook">Notebook</a></li>
+          <li><a href="https://2023.igem.wiki/stony-brook/results">Results</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://2023.igem.wiki/stony-brook/safety">Safety</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://2023.igem.wiki/stony-brook/human-practices">Human Practices</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">Awards</a>
+        <ul class="dropdown-menu">
+          <li><a href="https://2023.igem.wiki/stony-brook/education">Education</a></li>
+          <li><a href="https://2023.igem.wiki/stony-brook/entrepreneurship">Entrepreneurship</a></li>
+          <li><a href="https://2023.igem.wiki/stony-brook/hardware">Hardware</a></li>
+          <li><a href="https://2023.igem.wiki/stony-brook/inclusivity">Inclusivity</a></li>
+          <li><a href="https://2023.igem.wiki/stony-brook/measurement">Measurement</a></li>
+          <li><a href="https://2023.igem.wiki/stony-brook/model">Model</a></li>
+          <li><a href="https://2023.igem.wiki/stony-brook/plant">Plant</a></li>
+          <li><a href="https://2023.igem.wiki/stony-brook/software">Software</a></li>
+          <li><a href="https://2023.igem.wiki/stony-brook/sustainable">Sustainable</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  
+  
+
+
+
   <section class="title-section">
     <div class="background-image"></div>
     <div class="title-content">
@@ -23,7 +84,7 @@
   </section>
   
   <div class="team-section">
-
+    
     <div class="team-member">
       <div class="pic">
         <img src="https://static.igem.wiki/teams/4647/wiki/team/bushra-official.jpeg" alt="Member 1">
@@ -90,6 +151,79 @@
 
 
   <style>
+
+
+
+.navbar-logo img {
+  height: 100px; /* Adjust the height of the logo */
+  width: 200px;
+  margin-left: 40px;
+  margin-right: 200px; /* Add margin if needed */
+  object-fit: cover;
+}
+
+
+
+
+  .navbar {
+  background-color: white;
+  padding: 10px;
+
+  height: 100px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+margin-top: 35px;
+margin-right: 40px;
+
+  position: relative;
+  align-items: center;
+}
+
+.nav-link {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: white;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+
+
     /*footer styling*/
     .footer-content {
       margin-left: 300px;
@@ -213,5 +347,3 @@
 
 
 
-
-{% endblock %}
